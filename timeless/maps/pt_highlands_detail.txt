@@ -1,0 +1,55 @@
+duct_flr01	detail/metal02	2.0	2.0
+duct_flr01a	detail/metal02	2.0	2.0
+duct_flr02	detail/metal02	2.0	2.0
+duct_flr02a	detail/metal02	2.0	2.0
+duct_wall01	detail/metal02	2.0	2.0
+duct_wall02	detail/metal02	2.0	2.0
+duct_wall03	detail/metal02	2.0	2.0
+duct_wall04	detail/metal02	2.0	2.0
+{flag_udf		detail/textile01	3.0	3.0
+
+
+
+hil_grass01	detail/gras01	3.0	3.0
+hil_grass02	detail/gras01	3.0	3.0
+hil_grass03	detail/gras01	3.0	3.0
+hil_grass04	detail/gras01	3.0	3.0
+hil_grass05	detail/gras01	3.0	3.0
+hil_gra_rock01	detail/gras01	3.0	3.0
+hil_gra_rock02	detail/gras01	3.0	3.0
+hil_gra_rock04	detail/gras01	3.0	3.0
+hil_gra_way01	detail/stones01	5.0	5.0
+hil_gra_way02	detail/stones01	5.0	5.0
+hil_gra_way03	detail/stones01	5.0	5.0
+hil_gra_way05	detail/stones01	5.0	5.0
+hil_gra_way07	detail/stones01	5.0	5.0
+hil_gra_way08	detail/stones01	5.0	5.0
+hil_rock01	detail/rock01	3.0	3.0
+hil_rock02	detail/rock01	3.0	3.0
+hil_rock03	detail/rock01	3.0	3.0
+hil_rock04	detail/rock01	3.0	3.0
+hil_rock05	detail/rock01	3.0	3.0
+hil_rock06	detail/rock01	3.0	3.0
+hil_rock07	detail/rock01	3.0	3.0
+hil_rock08	detail/rock01	3.0	3.0
+hil_rock09	detail/rock01	3.0	3.0
+hil_rock10	detail/rock01	3.0	3.0
+hil_rock11	detail/rock01	3.0	3.0
+hil_trunk		detail/trunk01	2.0	2.0
+hil_wall01	detail/metal01	3.0	3.0
+hil_wall06	detail/wall01	5.0	5.0
+hil_wall07	detail/wall01	5.0	5.0
+diggetex-342	detail/metal02	5.0	5.0
+diggetex-203	detail/metalbars01 5.0	5.0
+diggetex-366	detail/metalbars01	5.0	5.0
+helipad001	detail/asphalt01	3.0	3.0
+hil_door01	detail/metal02	5.0	5.0
+hil_floor01	detail/grille01	2.0	2.0
+hil_floor02	detail/grille01	2.0	2.0
+hil_floor03	detail/metal01	3.0	3.0
+hil_floor04	detail/metal01	3.0	3.0
+hil_floor05	detail/tiling01	5.0	5.0
+hil_floor06	detail/tiling01	5.0	5.0
+
+
+

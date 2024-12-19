@@ -1,0 +1,17 @@
+// Default - Project Timeless - 03.02.02
+13
+//weapon_on		640 640wafferoh		0	96	64	32
+weapon			640 640spas12		0	0	64	32
+weapon_s		640 640spas12		0	32	64	32
+//weapon_t		640 640wafferoh		0	90	128	32
+crosshair 		640 crosshairs		24 	0 	24 	24
+ammo			640 640misc		64	64	64	64
+ammo2			640 640misc		128	64	64	64
+ammo2bg			640 640bucket		34	64	64	64
+ammobg			640 640bucket		34	130	64	66
+addon1_on		640 640wafferoh		0	0	64	64
+addon1_off		640 640wafferoh		0	0	64	64
+addon2_on		640 640wafferoh		64	0	64	64
+addon2_off		640 640wafferoh		64	0	64	64
+addon3_on		640 640wafferoh		128	0	64	64
+addon3_off		640 640wafferoh		128	0	64	64

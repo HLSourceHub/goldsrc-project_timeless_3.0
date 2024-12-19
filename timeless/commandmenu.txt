@@ -1,0 +1,168 @@
+// Command Menu definition
+// 
+// Basic :Format:
+//		"<Bound Key>" "<Button Text>" "<Command sent to server>"
+//
+// Or you can check for a specific class:
+//		<Class> "<BoundKey>" "<Button Text>" "<Command sent to server>"
+//  
+// Or you can check for a specific map:
+//		MAP <MapName> "<BoundKey>" "<Button Text>" "<Command sent to server>"
+// Where <MapName> is the name of the map, without the ".bsp".
+//
+// Or you can check for a specific team:F
+//		TEAM1 "<BoundKey>" "<Button Text>" "<Command sent to server>"
+//		TEAM2 "<BoundKey>" "<Button Text>" "<Command sent to server>"
+// TEAM3, TEAM4 work as well
+//
+// Buttons can also open up submenus, as follows:
+// {
+// 	"Some More Options",
+//	{
+//		...
+//	}
+// }
+//
+//
+// Buttons preceded with "CUSTOM" are handled in special ways. They can only be moved
+// around or deleted.
+//
+//
+// Limitations:
+//		Maximum of 40 menus.
+//		Maximum of 100 buttons per menu.
+
+//--------------------------------------------------------
+// Everything below here is editable
+
+// SIGNAL/RADIO/COMMAND STUFF
+// Format: <cmd> <Text to Send> <Sentence to Play>
+// Please don't change this thing unless you REALLY know what ya doing.
+
+
+"1" "Statements"
+{
+	"1" "'Affirmative.'"					"say_team Affirmative.%!RD_ROGER%"				// udf_affirmative1-4.wav
+	TEAM1 "2" "'Negative.'"					"say_team Negative.%!RD_NO%"				// udf_negeative1-3.wav
+	TEAM1 "3" "'Everything's clear.'"		"say_team Everything's clear.%!RD_CLEAR%"			// udf_clear1-3.wav
+	TEAM1 "4" "'Enemy spotted!'"			"say_team Enemy spotted, Sir!%!RD_NME_SIGHTED%"			// udf_enemy_spotted1-2.wav
+	TEAM1 "5" "'Enemy down.'"				"say_team Enemy down.%!RD_NME_DOWN%"				// udf_enemy_down1-3.wav
+	TEAM1 "6" "'Man down!'"				"say_team Man down!%!RD_TM_DOWN%"				// udf_mate_down1-3.wav
+	TEAM1 "7" "'Need help!'"				"say_team Team? I need help here!%!RD_HELP%"		// udf_help.wav
+	TEAM1 "8" "'Under heavy fire!'"			"say_team I'm under heavy fire!%!RD_UNDERFIRE%"			// udf_heavy_fire.wav
+	TEAM1 "9" "'I'm leading now!'"			"say_team OK team, I'm leading now!%!RD_LEADING%"		// udf_leading.wav
+	TEAM2 "2" "'Negative.'"					"say_team This is negative.%!RD_NO%"			// hor_negeative1-3.wav
+	TEAM2 "3" "'Sector clear.'"				"say_team Sector is clear.%!RD_CLEAR%"			// hor_clear1-3.wav
+	TEAM2 "4" "'Enemy spotted!'"			"say_team Enemy spotted!%!RD_NME_SIGHTED%"				// hor_enemy_spotted1-2.wav
+	TEAM2 "5" "'Enemy neutralized.'"		"say_team Enemy unit neutralized.%!RD_NME_DOWN%"		// hor_enemy_down1-3.wav
+	TEAM2 "6" "'Unit lost.'"				"say_team One unit lost!%!RD_TM_DOWN%"				// hor_mate_down1-3.wav
+	TEAM2 "7" "'Need help!'"				"say_team I need your help, troops!%!RD_HELP%"		// hor_help.wav
+	TEAM2 "8" "'Under heavy fire!'"			"say_team Need backup here, fast!%!RD_UNDERFIRE%"			// hor_heavy_fire.wav
+	TEAM2 "9" "'I'm leading now!'"			"say_team I am going to lead now troops!%!RD_LEADING%"		// hor_leading.wav
+}
+
+"2" "Orders"
+{
+	TEAM1 "1" "'Go go go!'"					"say_team Go go go! Move it!%!RD_MOVE%"			// udf_moveit.wav
+	TEAM1 "2" "'Attack!'"					"say_team Attack!%!RD_ATTACK%"				// udf_attacking1-2.wav
+	TEAM1 "3" "'Stick together!'"			"say_team Stick together team!%!RD_STICK%"			// udf_sticktogether.wav
+	TEAM1 "4" "'Get in position!'"			"say_team Get in position and wait for my go!%!RD_GETPOS%"	// udf_getposition.wav
+	TEAM1 "5" "'Take Point!'"				"say_team You take the point - I'll cover you!%!RD_TAKEPOINT%"	// udf_takepoint.wav
+	TEAM1 "6" "'Cover me!'"					"say_team Cover me soldier!%!RD_COVERME%"			// udf_coverme.wav
+	TEAM1 "7" "'Stayput Area!'"				"say_team Stay in this area!%!RD_STAYPUT%"			// udf_stayput1-2.wav
+	TEAM1 "8" "'Take Cover!'" 				"say_team Take cover team!%!RD_TAKECOVER%"			// udf_take_cover.wav
+	TEAM1 "9" "'Follow your orders!'"		"say_team Follow your orders!%!RD_FOLLOWORDERS%"			// udf_follow_orders.wav
+	TEAM2 "1" "'Go go go!'"					"say_team Go go moving troops!%!RD_MOVE%"			// hor_moveit.wav
+	TEAM2 "2" "'Attack!'"					"say_team Attack!%!RD_ATTACK%"				// hor_attacking1-2.wav
+	TEAM2 "3" "'Stick together!'"			"say_team Stick together troops!%!RD_STICK%"			// hor_sticktogether.wav
+	TEAM2 "4" "'Get in position!'"			"say_team Take position and wait for my go, troops!%!RD_GETPOS%" // hor_getposition.wav
+	TEAM2 "5" "'Take Point!'"				"say_team You take the point I will follow you unit.%!RD_TAKEPOINT%" // hor_takepoint.wav
+	TEAM2 "6" "'Cover me!'"					"say_team Cover me troops!%!RD_COVERME%"			// hor_coverme.wav
+	TEAM2 "7" "'Stayput Area!'"				"say_team Hold this sector troops!%!RD_STAYPUT%"		// hor_stayput1-2.wav
+	TEAM2 "8" "'Take Cover!'" 				"say_team Take cover now troops!%!RD_TAKECOVER%"			// hor_take_cover.wav
+	TEAM2 "9" "'Follow your orders!'"		"say_team Follow your orders unit!%!RD_FOLLOWORDERS%"		// hor_follow_orders.wav
+}
+
+"3" "Yells"
+{
+	TEAM1 "1" "'Open Fire!'"				"say Steady... steady... open Fire!%!RD_OPENFIRE%"		// udf_openfire.wav
+	TEAM1 "2" "'Anyone seen that shot?'"	"say Has anyone seen that shot?%!RD_SEENSHOT%"			// udf_seenthatshot.wav
+	TEAM1 "3" "'Die you bastard!'"			"say Die, you bastard!%!RD_DIE%"				// udf_die.wav
+	TEAM1 "4" "'Cry like babies!'"			"say Now we're going to make them cry like babies!%!RD_CRY%" // udf_crybabies.wav
+	TEAM1 "5" "'Get an Oilchange!'"			"say Get an oilchange, you crazy cyborg!%!RD_OILCHANGE%"		// udf_oilchange.wav
+	TEAM1 "6" "'What ya waiting for?!'"		"say Hey.. what ya waiting for?!%!RD_WAITINGFOR%"			// udf_waitingfor.wav
+	TEAM2 "1" "'Open Fire!'"						"say Steady.. steady .. open Fire!%!RD_OPENFIRE%"		// hor_openfire.wav
+	TEAM2 "2" "'... better generation!'"		"say Give it up, we are the better generation of you!%!RD_GIVEUP%"// hor_giveup.wav
+	TEAM2 "3" "'Made of meat...?'"					"say How does it feel like to be made of meat?%!RD_MEAT%"	// hor_meat.wav
+	TEAM2 "4" "'... will be your end!'"	"say Your technical progress will be your end!%!RD_PROGRESS%"   // hor_progress.wav
+	TEAM2 "5" "'Armory is ridiculous!'"		"say Your armory is so ridiculous!%!RD_RIDICULOUS%"		// hor_ridiculous.wav
+	TEAM2 "6" "'Suffer in hell!'"					"say Suffer in hell, stupid thing!%!RD_SUFFERHELL%"		// hor_sufferhell.wav
+	TEAM2 "7" "'... our revenge!'"		"say Take this taste of our revenge!%!RD_TAKETASTE%"		// hor_taketaste.wav
+	TEAM2 "8" "'In the end we will win!'"	"say What are you fighting for? In the end we will win!%!RD_WILLWIN%" // hor_wewillwin.wav
+}
+
+"4" "Hand Signals"
+{
+	"1" "'Wait!'"				"say_team Wait!%!SGNL_STOP%"
+	"2" "'Move In!'"			"say_team Move In!%!SGNL_MOVE%"
+	"3" "'Look There!'"			"say_team Look there!%!SGNL_POINT%"
+}
+
+"5" "Map Comms"
+	{
+		"1" "Offensive"
+			{
+				MAP pt_assault "1" "'Attack Tank'"		"say_team Focus attack on the Tank!"
+				MAP pt_assault "2" "'Attack Comanche'"		"say_team Focus attack on the Comanche!"
+
+				MAP pt_heat "1" "'Attack Tank'"			"say_team Focus attack on the Tank!"
+				MAP pt_heat "2" "'Attack Crates'"		"say_team Focus attack on the Crates!"	
+				
+				MAP pt_siege "1" "'Attack Upper Enemy Gate!'"	"say_team Focus attack on the upper gate!"
+				MAP pt_siege "2" "'Attack Lower Enemy Gate!'"	"say_team Focus attack on the lower gate!"
+				MAP pt_siege "3" "'Attack Middle Position!'"	"say_team Focus attack on the middle position!"
+				MAP pt_siege "4" "'Attack Enemy Base!'"		"say_team Focus attack on the enemy base!"
+			}
+		"2" "Defensive"
+			{
+				MAP pt_assault "1" "'Defend Tank'"		"say_team Defend the Tank!"
+				MAP pt_assault "2" "'Defend Comanche'"		"say_team Defend the Comanche!"
+
+				MAP pt_heat "1" "'Defend Tank'"			"say_team Defend the Tank!"
+				MAP pt_heat "2" "'Defend Crates'"		"say_team Defend the Crates!"
+
+				MAP pt_siege "1" "'Defend our Upper Gate!'"	"say_team Defend our upper gate!"
+				MAP pt_siege "2" "'Defend our Lower Gate!'"	"say_team Defend our lower gate!"
+				MAP pt_siege "3" "'Defend Middle Position!'"	"say_team Defend the middle position!"
+				MAP pt_siege "4" "'Defend our Base!'"		"say_team Defend our base!"
+
+			}
+		"3" "Routes"
+			{
+				MAP pt_assault "1" "'Go Over Bridge!'"		"say_team Move in over the bridge!"
+				MAP pt_assault "2" "'Go left Way!'"		"say_team Go over the left way!"
+				MAP pt_assault "3" "'Go through Tunnel!'"	"say_team Move in through the tunnel!"
+
+				MAP pt_siege "1" "'Take fatest way!'"		"say_team Take the fastest way!"
+				MAP pt_siege "2" "'Go through Tunnel!'"		"say_team Move in through the tunnel!"		
+			}
+		"4" "Meet At"
+			{
+				"1" "'Our Base'"				"say_team Let's meet in our base!"
+
+				MAP pt_assault "2" "'Bridge'"			"say_team Let's meet at the bridge!"
+				MAP pt_assault "3" "'Tunnel'"			"say_team Let's meet in the tunnel!"
+			}
+	}
+
+"6" "'Affirmative'"			"say_team Affirmative.%!RD_ROGER%"
+TEAM1 "7" "'Negative'"			"say_team Negative.%!RD_NO%"
+TEAM2 "7" "'Negative'"			"say_team This is negative.%!RD_NO%"
+TEAM1 "8" "'Need help'"			"say_team Team? I need help here!%!RD_HELP%"
+TEAM2 "8" "'Need help'"			"say_team I need help here troops!%!RD_HELP%"
+
+"0" "Change Settings"
+{
+	"1" "Change Team"	"teamselect"
+	"2" "Change Equipment"	"equip"
+}

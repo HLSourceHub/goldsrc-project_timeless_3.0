@@ -1,0 +1,794 @@
+<html>
+<head>
+<title>Project Timeless 2.0 Tutorial</title>
+</head>
+<style type="text/css">
+
+td.head {font-family:Trebuchet MS;font-size:20px;letter-spacing:1;color:#3681BA}
+td.text {font-family:Trebuchet MS;font-size:15px}
+a.text {font-size:13px;font-weight:1;color:#3681BA;text-decoration:none;font-family:Verdana}
+a:hover.text {font-size:13px;font-weight:1;color:#FF5205;text-decoration:none;font-family:Verdana}
+</style>
+<body>
+<table background="The Project Timeless Manual-Files/background.png" cellspacing="0" cellpadding="3" border="0" width="762" align="center">
+<tr height="135"><td>&nbsp;</td></tr>
+<tr><td class="head">&nbsp;&nbsp;&nbsp;<b>0.1 :</b> Overview</td></tr>
+<tr><td>
+<table cellspacing="10" cellpadding="10" border="0" width="100%">
+<tr height="300">
+<td class="text" valign="top"><b>1. Basic Knowledge</b><br>
+<a class="text" href="#11">1.1 Introduction</a><br>
+<a class="text" href="#12">1.2 Heads Up Display (HUD)</a><br>
+<a class="text" href="#13">1.3 After Respawn</a><br>
+<a class="text" href="#14">1.4 Useful Hints</a><br>
+<b>2. Details</b><br>
+<a class="text" href="#21">2.1 Ranking System</a><br>
+<a class="text" href="#22">2.2 Table of Weapon Information</a><br>
+<a class="text" href="#23">2.3 PT's Cvars</a><br>
+<b>3. Miscellaneous</b><br>
+<a class="text" href="#31">3.1 Links</a><br>
+<a class="text" href="#32">3.2 Credits</a><br>
+<a class="text" href="#33">3.3 Changelog</a><br>
+</td>
+</tr>
+</table>
+</td></tr>
+</table>
+
+
+<table cellspacing="0" cellpadding="3" border="0" width="762" align="center">
+<tr height="70"><td>&nbsp;</td></tr>
+<tr><td class="head"><font size="20" color="#000000"><b>BASIC KNOWLEDGE</b></font><br><a name="11"></a>&nbsp;&nbsp;&nbsp;<b>1.1 :</b> Introduction<br>
+<hr noshade style="width:770px; color:black; height:1px"></td></tr>
+<tr><td>
+<table cellspacing="10" cellpadding="10" border="0" width="100%">
+<tr>
+<td class="text"><div align="justify"><b><font color="#FF5205">1.1.1 Thank you ...</font></b><br>
+... for downloading <b>Project Timeless 2.0</b>! PT is a <b>Half-Life modification</b> and designed for multiplayer matches only.<br>
+I've written this manual <b>as short as possible</b> to make it easy to understand. Therefore I won't spend any more words on the introduction.
+<p>
+My only appeal is to spend some time on the <b>"Basic Knowledge"</b> part to get used to the game's basic principles and gameplay.
+<p>
+<p>
+<b><font color="#FF5205">1.1.2 How to start PT on Steam</font></b><br>
+Just install PT in the following directory: <b>"...\Steam\steamapps\your@emailaddress.com\half-life"</b><br>
+Our installer will automatically create a folder with the name <b>"timeless"</b> in your half-life directory.
+<p>
+After that just start Steam as usual. Than click on <b>"Games"</b> and you should see <b>"Project Timeless"</b> under <b>"Third Party Games"</b>.
+<p>
+<p>
+<b><font color="#FF5205">1.1.3 How to start PT on old Half-Life</font></b><br>
+Yes, it is right, you can also play PT on good ol' Half-Life. But note that there may appear some bugs (e.g. blue trees, etc.) and that PT 2.0 is designed for Steam. Additionally you can't connect to Steam servers!
+<p>
+Install PT in your <b>"...\Half-Life"</b> directory.<br>
+Our installer will automatically create a folder with the name <b>"timeless"</b> in your Half-Life directory.
+<p>
+Than just start Half-Life, click on <b>"Custom Game"</b>, choose <b>"Project Timeless 2.0"</b> from the modifications list and just click on <b>"Activate"</b> after that.
+<p>
+<p>
+<b><font color="#FF5205">1.1.4 Important note!</font></b><br>
+PT's maps are devided in different "subrounds". At the beginning the mission briefing of the recent round shows up so the player can equip himself with items that fit to the mission. The mission briefing is explained in details at <a href="#13">1.3 After Respawn</a>.<br>
+The recent subround is displayed in the upper right corner of your screen.<br>
+<b>Note: PT is starting the next subround according to the winner of the previous subround.<br></b>
+For example: If team A wins subround 1, subround 2 is started.
+But if team B wins subround 1, subround 3 is started.
+</td>
+</tr>
+</div>
+</table>
+</td></tr>
+</table>
+
+
+
+
+<table cellspacing="0" cellpadding="3" border="0" width="762" align="center">
+<tr height="70"><td>&nbsp;</td></tr>
+<tr><td class="head"><a name="12"></a>&nbsp;&nbsp;&nbsp;<b>1.2 :</b> Heads Up Display (HUD)<br>
+<hr noshade style="width:770px; color:black; height:1px"></td></tr>
+<tr><td>
+<table cellspacing="10" cellpadding="10" border="0" width="100%">
+<tr>
+<td class="text"><div align="justify"><b><font color="#FF5205">1.2.1 Picture</font></b><br>
+<img src="The Project Timeless Manual-Files/hud.jpg" border="0" alt="">
+<p>
+<p>
+<b><font color="#FF5205">1.2.2 Legend</font></b><br>
+<b>» 1. - Respawncounter:</b><br>
+This number shows the number of spawns that are left. Some subrounds don't have limited respawns, so the counter stays at 0. (as shown in the picture)
+<p>
+<b>» 2. - Radar:</b><br>
+It's very powerful if you know how to use it. Unfortunatly most players don't know...<br>
+Here's the explication:<br>
+<p>
+<img src="The Project Timeless Manual-Files/dreieck1.gif"> = Target above player<br>
+<img src="The Project Timeless Manual-Files/dreieck2.gif"> = Target undernearth player<br>
+<img src="The Project Timeless Manual-Files/kreis.gif"> = Target on same level as player<br>
+<p>
+The color of the target is also giving an important information:<br>
+<img src="The Project Timeless Manual-Files/kreis.gif"> = Mission target<br>
+<img src="The Project Timeless Manual-Files/kreis2.gif"> = Teammate<br>
+<img src="The Project Timeless Manual-Files/kreis3.gif"> = Hostage<br>
+<img src="The Project Timeless Manual-Files/kreis4.gif"> = Secondary mission target (helpful to fulfill the mission target)<br>
+<p>
+Just take a look at the radar in the picture. You'll notice that there is shown a green triangle, giving the information that the mission target is undernearth the player and directly in front of him. And if you concentrate your view on the cross of the radar you'll recognize a blue point besides it. This point represents the teammate that you can see in the picture shooting at the enemy.
+<p>
+<b>» 3. - Stamina:</b><br>
+This bar represents your stamina. If you sprint or jump a lot it will decrease. To increase it just stop or walk normally without sprinting.
+<p>
+<b>» 4. - Health and Armor:</b><br>
+This bar displays your health and armor status. The health bar (left) will decrease and turn red if you got hit. On the other hand the armor bar (right) will also decrease but remain its color. Every shot reduces health AND armor (only in case if you've chosen one) according to the weapon from which the shot has been fired.<br>
+For instance: A shotgun will primarily reduce armor because the bullet's caliber is very small.<br>
+A sniper rifle instead will primarily reduce health because the bullet's caliber is very big and will just hit through the armor.
+<p>
+<b>» 5. - Roundtimer:</b><br>
+This timer displays the roundtime that is left for a subround. To get the remaining maptime just hit the "Timeleft"-Key.
+<p>
+<b>» 6. - Ammunition:</b><br>
+The left rectangle shows how much bullets are left in your magazine. The right shows how much magazines are left in your ammunition belt.<br>
+In our case we have 17 bullets left in our magazine, and 1 magazine left.
+<p>
+<b>» 7. - Subroundmonitor:</b><br>
+It shows which subround you're playing. In case you're playing a map for the first time, just remember the mission target and the number of the subround to learn the map quicker.<br>
+In the picture you will notice that subround 1 is active.
+<p>
+</td>
+</tr>
+</div>
+</table>
+</td></tr>
+</table>
+
+
+
+
+<table cellspacing="0" cellpadding="3" border="0" width="762" align="center">
+<tr height="70"><td>&nbsp;</td></tr>
+<tr><td class="head"><a name="13"></a>&nbsp;&nbsp;&nbsp;<b>1.3 :</b> After Repsawn<br>
+<hr noshade style="width:770px; color:black; height:1px"></td></tr>
+<tr><td>
+<table cellspacing="10" cellpadding="10" border="0" width="100%">
+<tr>
+<td class="text"><div align="justify"><b><font color="#FF5205">1.3.1 Connecting ...</font></b><br>
+<img src="The Project Timeless Manual-Files/chooseteam.jpg"><br>
+<p>
+After you have connected on a server just <b>select your team by clicking on the logo</b>. The text shown in the yellow rectangle is about the map and tells the player the <b>background story</b> and some <b>details about the map</b> itself (size, subrounds, etc.). Choosing a team will bring you to the equipment screen.
+<p>
+<p>
+<b><font color="#FF5205">1.3.2 SubRound Briefing</font></b><br>
+<img src="The Project Timeless Manual-Files/briefing.jpg">
+<p>
+The SR briefing shows the player the <b>recent mission target</b>. A short text next to the pictures, that show the mission goal, describes the target the team must achieve.<br>
+Just spend a little time to read it because it is <b>VERY</b> important. Connect your knowledge about the mission goal with the radar (that displays the target as a green point) in case you're playing a map for the first time. That would be the best way to learn a map.
+<p>
+<p>
+<b><font color="#FF5205">1.3.3 Equipment Screen</font></b><br>
+<img src="The Project Timeless Manual-Files/equipmenu.jpg">
+<p>
+By clicking on the <b>"Select Weapons"-Button</b> you'll get to the Equipment Screen. You should only choose weapons that fit to the subround.<br>
+<b>For instance</b>: If you're playing a mission that takes place in small corridors a sniper wouldn't really fit into the mission. In this case <b>a submachine gun would be the best choice</b>.
+<p>
+The Equipment Screen is devided into different parts:<br>
+- <b>Weapon Categories:</b><br>
+All weapons are classified in different categories, just like Handguns, Submachine Guns and all.<br>
+- <b>Select Your Items:</b><br>
+This window shows you the content of a category. For one, you'll get a list of rifles if you click on the "Rifle" category.<br>
+- <b>Select Your Character:</b><br>
+Your choice of character you would like to play has no influence on the gameplay. Just for the diversity of characters, you know.<br>
+- <b>Player Info:</b><br>
+Gives you some information about your name, your team and your rank. Additionally it contains a bar that displays your mobility. The more you take with you the more you'll get slower.<br>
+- <b>Weapon Info:</b><br>
+This window shows your inventar (concerning only primary and secondary weapon, not items) you would spawn with by clicking on the Ok-Button.<br>
+<p>
+When you have made your choice just click on the Ok-Button to spawn.
+</td>
+</tr>
+</div>
+</table>
+</td></tr>
+</table>
+
+
+
+<table cellspacing="0" cellpadding="3" border="0" width="762" align="center">
+<tr height="70"><td>&nbsp;</td></tr>
+<tr><td class="head"><a name="14"></a>&nbsp;&nbsp;&nbsp;<b>1.4 :</b> Useful Hints<br>
+<hr noshade style="width:770px; color:black; height:1px"></td></tr>
+<tr><td>
+<table cellspacing="10" cellpadding="10" border="0" width="100%">
+<tr>
+<td class="text"><b><font color="#FF5205">1.4.1 First steps</font></b><br>
+Congratulations, you have just spawned!<br>
+There are now three advices you should always heed:<br>
+<p>
+<b>1. Remember where you have spawned.</b><br>
+The spawnpoint depends on the SR you're playing and your team. It's very useful to learn the map quickly if you know where the spawnpoints are placed in a SR.
+<p>
+<b>2. Remember your mission goal.</b><br>
+It's essential because only killing the enemy team (like mostly in CS) won't help your team in the majority of cases to win. In case you've forgotten it just press your "Briefing key" (Standard: <b>b</b> like <b>B</b>riefing) or look at the radar.
+<p>
+<b>3. Stick together.</b><br>
+Sticking together gives some advantages to every team member. Firstly, there is mostly always one that knows where to go. Secondly, you get more points for killing an enemy if you assault together.
+<p>
+<b><font color="#FF5205">1.4.2 Veteran's advices</font></b><br>
+<b>- Duckjump in PT:</b><br>
+It works a little bit different in PT like in HL. If you're duckjumping you have to hit the Jump and the Duck-Key first. Before landing press the Duck-Key a second time to "deactivate" ducking and reach the ground standing.
+<p>
+<b>- Bullets through walls:</b><br>
+As you likely know from Counter-Strike you can hit through walls in PT as well. But we have reduced it to only 32 mapping units. 32 mapping units are: doors, edges of walls, small crates and all.
+<p>
+<b>- Charging a c4:</b><br>
+By pressing the left mouse button you'll charge the c4 that it will explode in 4 seconds. But if you're pressing the right mouse button it will explode in 9 seconds. This is very useful if you want to kill approaching enemies (because 4 seconds are mostly not enough time).
+<p>
+<b>- Tricky napalm: (HoR only)</b><br>
+You can block a corridor or even a mission goal by throwing a napalm nade on the right place.
+<p>
+<b>- Tricky EMP: (UDF only)</b><br>
+The EMP spreads in all directions. You can reach more enemies with your EMP if you're thinking in three dimensions. For instance, in underearth (SR1) you will freeze more HoRs by throwing your EMP into the room above the computer. It will reach all HoRs in the room, all HoRs underneath it and maybe even those in the stairway.
+<p>
+<b>- Explosives:</b><br>
+Remember that explosions won't reach enemies through walls. Some crates do also block the damage of a explosion, some don't, though. Find out by experimenting which crates block and which not.
+<p>
+<b>- Stealth:</b><br>
+Proning connected with stealth is a dangerous weapon. While laying still stealth is most effectively.
+<p>
+<b>- Weaponguide:</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;» Indoor with corridors, small halls (e.g. underearth):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Submachine gun, shotgun, automatic rifles<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;» Outdoor with an indoor part (e.g. assault):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Automatic Rifles, Submachine gun, Snipers<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;» Outdoor with large areas and high distances (e.g. highlands)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Snipers, Automatic Rifles<br>
+<p>
+<b><font color="#FF5205">1.4.3 Pro's advices</font></b><br>
+<b>- Choose the best armor:</b><br>
+Your armor has a very heavy influence on your mobility. Therefore you have to choose smartly. In most cases a pro should omit a kevlar vest because your advantage you get by a higher mobility is bigger than the one by suffering more hits. You should choose a helmet, though, because it prevents you from critical hits in your head and it doesn't take much mobility.
+<p>
+<b>- Without secondary:</b><br>
+Most players take a secondary because they are used to it from other games (e.g. Counter-Strike, where you get a handgun automatically).<br>
+PT is different in this case because the weapon changing time is very long (but pretty much shorter than in PT 1.0). You should set a handgun aside if you're choosing a submachine gun, shotgun or an automatic rifle. Though, it would be pretty smart carrying a handgun with you if you had chosen a sniper (or a special item like stealth or the movement sensor that occupies your primary slot) because in case you get into a melee fight you just can switch to your secondary weapon.
+<p>
+<b>- Don't prone:</b><br>
+Proning provides being hit in the head because your head is the biggest area you show to your enemy while proning when he aims at you. In the majority of cases you should strafe all the time, but just hold on when you're shooting.
+<p>
+<b>- Tactical suicide:</b><br>
+There are some situations where a suicide (by entering "kill" in the console) is the smartest thing you could do. For example a situation in pt_siege: You are attacking the enemy's base, but as you are assaulting all of a sudden you recognize that your own base is under heavy fire and you are really near to loose the game. Now it can be smart to kill yourself and to defend your own base because you will respawn just right after you killed yourself in your own base.
+<p>
+<b>- Always take a gasmask: (UDF only)</b><br>
+A gasmask is reducing your sight, but the advantage of being invulnerable concerning gas is quite overwhelming. Additionally the gasmask doesn't take influence on your mobility.
+<p>
+<b>- No gas nade: (HoR only)</b><br>
+The gas nade is really too weak, because most of the UDF team wear a gasmask. A napalm nade is doing a better job when it comes to block a way.
+<p>
+<b>- Hidden bug of the napalm nade:</b><br>
+Unfortunately our coder didn't manage it to cut off the napalm damage through walls. Therefore, if you are very used to the map, you are able to block more than one way. For example (pt_underearth): If you throw a napalm nade into the room above the computer room (SR1) you will also block the vent that goes straight through the floor of the room.
+</td>
+</tr>
+</div>
+</table>
+</td></tr>
+</table>
+
+
+
+<table cellspacing="0" cellpadding="3" border="0" width="762" align="center">
+<tr height="70"><td>&nbsp;</td></tr>
+<tr><td class="head"><font size="20" color="#000000"><b>DETAILS</b></font><br><a name="21"></a>&nbsp;&nbsp;&nbsp;<b>2.1 :</b> Ranking System<br>
+<hr noshade style="width:770px; color:black; height:1px"></td></tr>
+<tr><td>
+<table cellspacing="10" cellpadding="10" border="0" width="100%">
+<tr>
+<td class="text"><div align="justify">
+The ranks are displayed next to the name of the player in the scoreboard. Additionally it is shown on the right arm of the UDF playermodel and in front of the torso of the HoR playermodel. The ranks don't take effect on the character's abilities.<br>
+<b><font color="#FF5205">2.1.1 Ranks of the UDF</font></b><br>
+The command structure of the UDF:
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="The Project Timeless Manual-Files\udf_rank3.jpg"><b>1. Commander (only 1)</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="The Project Timeless Manual-Files\udf_rank2.jpg"><b>2. Lieutenant (unlimited)</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="The Project Timeless Manual-Files\udf_rank1.jpg"><b>3. Veteran (unlimited)</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>4. Soldier (no rank)</b><br>
+<p>
+<b><font color="#FF5205">2.1.2 Ranks of the HoR</font></b><br>
+The command structure of the HoR:
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="The Project Timeless Manual-Files\hor_rank3.jpg"><b>1. Terminator (only 1)</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="The Project Timeless Manual-Files\hor_rank2.jpg"><b>2. Warmachine (unlimited)</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="The Project Timeless Manual-Files\hor_rank1.jpg"><b>3. Destroyer (unlimited)</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>4. Trooper (no rank)</b><br>
+<p>
+<b><font color="#FF5205">2.1.3 Requirements</font></b><br>
+<b>1. <img src="The Project Timeless Manual-Files\udf_rank3.jpg"> Commander / <img src="The Project Timeless Manual-Files\hor_rank3.jpg"> Terminator</b><br>
+Player with the highest score in the team + 20 points more than the second player.
+<p>
+<b>2. <img src="The Project Timeless Manual-Files\udf_rank2.jpg"> Lieutnant / <img src="The Project Timeless Manual-Files\hor_rank2.jpg"> Warmachine</b><br>
+Must be higher than the average teamscore + half the score of the best player of the team.
+<p>
+<b>3. <img src="The Project Timeless Manual-Files\udf_rank1.jpg"> Veteran / <img src="The Project Timeless Manual-Files\hor_rank1.jpg"> Destroyer</b><br>
+Must be higher than the average teamscore.
+<p>
+<b><font color="#FF5205">2.1.4 Score System</font></b><br>
+PT's score system is <b>very</b> complicated, but there are some things you can do to get a higher score. It follows a list of actions you get points for:<br>
+<b>- Killing:</b><br>
+For every killed enemy you get exactly 10 Points.<br>
+<b>- Standing next to a teammate, that achieves a frag:</b><br>
+The closer you stand next to him the higher the score you get.<br>
+<b>- Fulfilling a mission target:</b><br>
+This depends on the map because the mapper can enter a value. Additionally the mapper can control if a player, that stands next to the mission goal, gets some points, too.<br>
+<p>
+All points you get are added to the "Total Score" (second chart of the scoreboard). The "Average Score" (first chart of the scoreboard) is calculated by "Total Score"/"Your Number of Respawns". So, the "Average Score" is the average score you achieve per respawn.
+<p>
+</td>
+</tr>
+</div>
+</table>
+</td></tr>
+</table>
+
+
+
+
+
+
+<table cellspacing="0" cellpadding="3" border="0" width="762" align="center">
+<tr height="70"><td>&nbsp;</td></tr>
+<tr><td class="head"><a name="22"></a>&nbsp;&nbsp;&nbsp;<b>2.2:</b> Table of Weapon Information<br>
+<hr noshade style="width:770px; color:black; height:1px"></td></tr>
+<tr><td>
+<table cellspacing="10" cellpadding="10" border="0" width="100%">
+<tr>
+<td class="text"><div align="justify"><b><font color="#FF5205">2.2.1 Weapons</font></b><br>
+<img src="The Project Timeless Manual-Files\weapons.jpg"><br>
+<p>
+<b><font color="#FF5205">2.2.2 Items</font></b><br>
+<img src="The Project Timeless Manual-Files\equip.gif"><br>
+</td>
+</tr>
+</div>
+</table>
+</td></tr>
+</table>
+
+
+
+
+
+
+
+
+<table cellspacing="0" cellpadding="3" border="0" width="762" align="center">
+<tr height="70"><td>&nbsp;</td></tr>
+<tr><td class="head"><a name="23"></a>&nbsp;&nbsp;&nbsp;<b>2.3 :</b> PT's Cvars<br>
+<hr noshade style="width:770px; color:black; height:1px"></td></tr>
+<tr><td>
+<table cellspacing="10" cellpadding="10" border="0" width="100%">
+<tr>
+<td class="text"><div align="justify"><b>sv_maxspeed 320</b><br>
+player speed for PT<br>
+<b>sv_stopspeed 50</b><br>
+reduced stopspeed for PT (might affect proning if > 50)<br>
+<b>pt_restart 0</b><br>
+set to 1 if you want to restart the game<br>
+<b>pt_autoteambalance 1</b><br>
+automatically adjust teams to be fair<br>
+<b>pt_forcebalance 1</b><br>
+if 1 players won't be able to join a team with more players<br>
+<b>mp_friendlyfire 1</b><br>
+toggle friendly fire<br>
+<b>pt_allowspects 1</b><br>
+allow spectating a game<br>
+<b>pt_spectchat 1</b><br>
+if 1, every player can see the spectators chat<br>
+<b>pt_hbombtimer 45</b><br>
+default timer for H-Bomb (does not affect timer if mapper has set a time)<br>
+<b>pt_tkkickfactor 1</b><br>
+kick players it tk-kill-ratio is greater than this<br>
+<b>pt_tkkickstart 3</b><br>
+kick players with equal or more tks than this<br>
+<b>pt_tkautokick 1</b><br>
+0 = don't kick, 1 = kick, 2 = kick&ban<br>
+<b>pt_tkbantime 1</b><br>
+sets the minutes to ban a teamkiller; 0 means permanent<br>
+</td>
+</tr>
+</div>
+</table>
+</td></tr>
+</table>
+
+
+
+
+
+
+<table cellspacing="0" cellpadding="3" border="0" width="762" align="center">
+<tr height="70"><td>&nbsp;</td></tr>
+<tr><td class="head"><font size="20" color="#000000"><b>MISCELLANEOUS</b></font><br><a name="31"></a>&nbsp;&nbsp;&nbsp;<b>3.1 :</b> Links<br>
+<hr noshade style="width:770px; color:black; height:1px"></td></tr>
+<tr><td>
+<table cellspacing="10" cellpadding="10" border="0" width="100%">
+<tr>
+<td class="text"><div align="justify"><b><font color="#FF5205">3.1.1 Official</font></b><br>
+<a href="http://project-timeless.serverforce.de/" target="pt_offic">www.project-timeless.de</a>
+<p>
+<p>
+<b><font color="#FF5205">3.1.2 Communities</font></b><br>
+<a href="http://ptcore.ngz-network.de/" target="pt_core">www.project-core.de</a><br>
+<a href="http://www.projecttimeless.de/" target="pt_modguide">www.projecttimeless.de</a>
+<p>
+<p>
+<b><font color="#FF5205">3.1.3 Contributer's homepages</font></b><br>
+<b>MoCo:</b><br>
+<a href="http://www.moco2k.de/" target="moco">www.moco2k.de</a><br>
+project leader, lead game designer, level designer, webmaster<br>
+<b>Warbeast:</b><br>
+<a href="http://www.warbeast.de/" target="warbeast">www.warbeast.de</a><br>
+level designer, gfx-artist, 3d-artist<br>
+<b>SirPrise:</b><br>
+<a href="http://www.sirprise.de.vu/" target="sirprise">www.sirprise.de.vu</a><br>
+soundtrack composer<br>
+<b>TheSurgeon:</b><br>
+<a href="http://www.thesurgeon.rulz.de/" target="surgeon">www.thesurgeon.rulz.de</a><br>
+level designer<br>
+<p>
+<p>
+</td>
+</tr>
+</div>
+</table>
+</td></tr>
+</table>
+
+
+
+
+
+
+
+<table cellspacing="0" cellpadding="3" border="0" width="762" align="center">
+<tr height="70"><td>&nbsp;</td></tr>
+<tr><td class="head"><a name="32"></a>&nbsp;&nbsp;&nbsp;<b>3.2 :</b> Credits<br>
+<hr noshade style="width:770px; color:black; height:1px"></td></tr>
+<tr><td>
+<table cellspacing="10" cellpadding="10" border="0" width="100%">
+<tr>
+<td class="text"><div align="justify"><b><font color="#FF5205">3.2.1 Active Teamembers</font></b><br>
+<b>Moritz Cohrs</b> <br>
+    aka <span class="textimp">&quot;MoCo&quot;</span> : project leader, lead game
+    designer, level designer, webmaster<br>
+    <br>
+    [ design document, game concept &amp; storyboard | maps : pt_avenger, pt_assault
+    (basic release), pt_heat, pt_siege, pt_deepsea | weapon qc's, arrangements
+    | website content | team lead | remaining things that have to be done ]<br>
+    <a class="text" href="mailto:%5Bremove_this%5Dmoco@project-timeless.de" target="_blank"><br>
+    - contact -</a> |<a class="text" href="http://www.moco2k.de" target="_blank">
+    - url -</a><br>
+    <br>
+    <br>
+    <br>
+    <b>Jan Rieke</b><br>
+    aka <span class="textimp">&quot;Rockefeller&quot;</span> : co-leader, lead
+    programmer<br>
+    <br>
+    [ main program code | game concepts | knife (animation) ]<br>
+    <a class="text" href="mailto:rockefeller@project-timeless.de" target="_blank"><br>
+    - contact -</a><br>
+    <br>
+    <br>
+    <br>
+    <b>Michael Kahl</b><br>
+    aka <span class="textimp">&quot;P$yk0m@n&quot;</span> : level designer<br>
+    <br>
+    [ maps : pt_highlands, pt_snowdrift (first part), pt_assault (improved/adapted),
+    pt_cargo (improved/adapted) | textures : terrain and tree textures for pt_highlands
+    and pt_snowdrift ]<br>
+    <br>
+    <a class="text" href="mailto:UPCpsykoman@web.de" target="_blank">- contact
+    -</a> <br>
+    <br>
+    <br>
+    <br>
+    <b>Johannes Ewald</b><br>
+    aka <span class="textimp">&quot;siR&quot;</span> : level designer, gfx-artist
+    <br>
+    <br>
+    [ maps : pt_underearth | sounds : radio commands, map background sounds |
+    <br>
+    homepage &amp; menu graphics ]<br>
+    <br>
+    <a class="text" href="mailto:e-design24@web.de" target="_blank">- contact
+    -</a> <br>
+    <br>
+    <br>
+    <br>
+ <b>Jeremy Aspen Prescott</b><br>
+    aka <span class="textimp">&quot;Tschetsch&quot;</span> : 3d-artist, weapon
+    animator<br>
+    <br>
+    [ weapons : razor (animation), shark (animation), red-snake (animation), m4
+    (animation), amp (animation), stoner sr-25 (animation), h-bomb (animation
+    | weapon p_models ]<br>
+    <br>
+    <a class="text" href="mailto:tschetsch@slanp.ch" target="_blank">- contact
+    -</a><br>
+<br>
+<br>
+<br>
+    <b>Nils Kochem</b><br>
+    aka <span class="textimp">&quot;Recoilmaster&quot;</span> : pr manager<br>
+    <br>
+    [ public relations | server/mirror organization ]<br>
+    <br>
+    <a class="text" href="mailto:recoilmaster@ehg-clan.de" target="_blank">- contact
+    -</a> <br>
+    <br>
+    <br>
+    <br>
+    <b>Jason Kane</b><br>
+    aka <span class="textimp">&quot;IceFire&quot;</span> : programmer<br>
+    <br>
+    [ program code : visual effects, weather system ]<br>
+    <br>
+    <a class="text" href="mailto:icefire_181@hotmail.com" target="_blank">- contact
+    -</a> <br>
+    <br>
+    <br>
+    <br>
+    <b>Tom Joedecke</b><br>
+    aka <span class="textimp">&quot;Mot&quot;</span> : 3d-artist<br>
+    <br>
+    [ weapons : mp5k (model), sig sg3000 (model), spas12 (model), new h-bomb (model)
+    | speedboat (model) | some p_models ]<br>
+    <br>
+    <a class="text" href="mailto:tom@eurebia.net" target="_blank">- contact -</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <b>Florian</b><br>
+    aka <span class="textimp">&quot;Wommi&quot;</span> : 3d-artist<br>
+    <br>
+    [ weapons : amp (model), m4 (model), razor (model) | buggy (model) | some
+    p_models ]<br>
+    <br>
+    <a class="text" href="mailto:Wommi@project-core.de " target="_blank">-
+    contact -</a><br>
+    <br>
+<br>
+    <br>
+    <b>Daniel Mai</b><br>
+    aka <span class="textimp">&quot;DanThrash&quot;</span> : sprite-wizard, special
+    game tester<br>
+    <br>
+    [ hud-sprites | some sound effects ]<br>
+    <br>
+    <a class="text" href="mailto:DanThrash@EchoMirage.net" target="_blank">- contact
+    -</a> <br>
+    <br>
+    <br>
+    <br>
+<b><font color="#FF5205">3.2.2 Inactive / Former Teamembers</font></b><br>
+<b>S&ouml;nke Seidel</b><br>
+  aka <span class="textimp">&quot;Warbeast&quot;</span> : level designer, gfx-artist,
+  3d-artist<br>
+  <br>
+  [ maps : pt_liberty, pt_airforceone | weapons : socom (model), desert eagle
+  (model, skin), remington m940 (model, skin), minigun (model, skin), uzi (skin),
+  g36 (skin), razor (skin), amp (skin), red-snake (model, skin), shark (model,
+  skin), bison (model, skin) | map models : tank (model, skin), comanche (skin),
+  truck (model, skin), grenades (skin) | hud graphics ]<br>
+  <br>
+  <a class="text" href="http://www.warbeast.de" target="_blank"> - url -</a><br>
+  <br>
+  <br>
+  <br>
+<b>Stephko</b><br>
+
+  aka <span class="textimp">&quot;Shimmer&quot;</span> : 3d-artist, weapon animator,
+  sound-artist<br>
+  [ player skins | weapons : g36 (animation), socom (skin, animation), desert
+  eagle (animation), mp5k (skin, animation), sg3000 (skin, animation), minigun
+  (animation), spas12 (skin, animation), m4a1-v (skin) | various game sounds ]<br>
+  <br>
+  <a class="text" href="mailto:metal@gfxpro.com" target="_blank">- contact -</a><br>
+  <br>
+  <br>
+  <br>
+  <b>Peter Ryan</b><br>
+  aka <span class="textimp">&quot;TorQue[MoD]&quot;</span> : player animator<br>
+  <br>
+  [ player animations | 5th playerhead skin ]<br>
+<br>
+  <a class="text" href="mailto:torque_mod@planethalflife.com" target="_blank">- contact -</a>
+  |<a class="text" href="http://www.planethalflife.com/modmapper/" target="_blank"> - url -</a><br>
+  <br>
+  <br>
+  <br>
+  <span class="textimp">&quot;Diggedagg&quot;</span> : texture-artist<br>
+  <br>
+  [ main pt texture database ]<br>
+  <br>
+  <br>
+  <br>
+  <b>Jonas</b><br>
+  aka <span class="textimp">&quot;Al Capone&quot;</span> : 3d-artist<br>
+  <br>
+  [ technical modelling support, qc | comanche (model) | game concepts ]<br>
+  <br>
+  <a class="text" href="mailto:al_capone_@gmx.net" target="_blank">- contact -</a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <b>Christoph Sachal</b><br>
+  aka <span class="textimp">&quot;Sir Prise&quot;</span> : soundtrack composer<br>
+  <br>
+  [ music tracks : deventry IV, desert storm, infiltrating the labs ]<br>
+  <br>
+  <a class="text" href="mailto:sirprise@olis.north.de" target="_blank">- contact
+  -</a> | <a class="text" href="http://www.sirprise.de.vu/" target="_blank">-
+  url -</a> <br>
+  <br>
+  <br>
+  <br>
+  <b>Stefan Vitek</b><br>
+  aka <span class="textimp">&quot;Nimrod][The Prophet&quot;</span> : 3d-artist<br>
+  <br>
+  [ weapons : g36 (model), stoner sr-25 (model) ]<br>
+  <br>
+  <a class="text" href="mailto:nimrod2k@gmx.at" target="_blank">- contact -</a>
+  <br>
+  <span class="textimp"><br>
+  <br>
+  <br>
+  &quot;The Surgeon&quot;</span> : level-designer<br>
+  [ pt_cargo ] <br>
+  <a class="text" href="mailto:moco2k@gmx.net" target="_blank"><br>
+  </a><a class="text" href="http://www.thesurgeon.rulz.de/" target="_blank">-
+  url -</a> <br>
+  <br>
+  <br>
+  <br>
+  <b>Paavo Patzschke</b><br>
+  aka <span class="textimp">&quot;Mental-Phreak&quot;</span> : 3d-artist<br>
+  <br>
+  [ weapons : uzi (model) ]<br>
+  <br>
+  <a class="text" href="mailto:PaavoPatzschke@hotmail.com" target="_blank">- contact
+  -</a> <br>
+  <br>
+  <br>
+  <br>
+  <b>Christian Oesch</b><br>
+  aka <span class="textimp">&quot;NoFL&quot;</span> : texture artist<br>
+  <br>
+  [ pt_highlands indoor textures ]<br>
+  <br>
+  <a class="text" href="mailto:christian@duplex-systems.com" target="_blank">- contact -</a><br>
+  <br>
+  <br>
+  <br>
+  <b>Hans-Peter Protto</b><br>
+  aka <span class="textimp">&quot;Killing me softly&quot;</span> : programmer<br>
+  <br>
+  [ first alpha code ;) ]<br>
+  <br>
+  <br>
+  <br>
+  <b>Bodo Winter</b><br>
+  aka <span class="textimp">&quot;Stroggos&quot;</span> : level-designer<br>
+  <br>
+  [ pt_twilight]<br>
+  <br>
+  <a class="text" href="mailto:stroggos@stroggos.de" target="_blank">- contact
+  -</a> <br>
+  <br>
+  <br>
+  <br>
+  <span class="textimp">&quot;h&ordf;nk&yen;&quot;</span> : programer<br>
+  <br>
+  [ various coding stuff ]<br>
+  <br>
+<br>
+<br>
+  <b>Jan Schlemminger</b><br>
+  aka <span class="textimp">&quot;Jever&quot;</span> : Founder<br>
+  <br>
+  <a class="text" href="mailto:jever@project-timeless.de" target="_blank">- contact
+  -</a>  <br>
+    <br>
+    <br>
+    <br>
+<b><font color="#FF5205">3.2.3 Thanks to...</font></b><br>
+Serverforce and Planethalflife (hosting)
+<p>
+NGZ and all others server sponsors
+<p>
+Valve for creating half-life
+<p>
+All alpha-testers
+<p>
+Jever & Ewatch for project founding
+<p>
+<b>All pt fans out there</b>
+
+  </div>
+</div>
+</td>
+</tr>
+</div>
+</table>
+</td></tr>
+</table>
+
+
+
+
+
+
+
+
+
+<table cellspacing="0" cellpadding="3" border="0" width="762" align="center">
+<tr height="70"><td>&nbsp;</td></tr>
+<tr><td class="head"><a name="33"></a>&nbsp;&nbsp;&nbsp;<b>3.3 :</b> Changelog<br>
+<hr noshade style="width:770px; color:black; height:1px"></td></tr>
+<tr><td>
+<table cellspacing="10" cellpadding="10" border="0" width="100%">
+<tr>
+<td class="text"><div align="justify">
+BETA 2.0 new features/changes<br>
+=============================<br>
+- auto teamkill punishment<br>
+- faster movement and weaponchange<br>
+- subround display<br>
+- remaining respawns display<br>
+- improved score-system<br>
+- new player animations<br>
+- udf movement sensor<br>
+- new grenades: napalm, emp<br>
+- new/better weapon and explosion effects<br>
+- small weapon changes, new razor model<br>
+- new maps: pt_siege, pt_heat, pt_deepsea, pt_airforceone<br>
+- changed/rebuild maps: pt_assault, pt_avenger, pt_cargo, pt_highlands, pt_underearth, pt_liberty, pt_snowdrift<br>
+- removed maps: pt_desertstorm<br>
+- more gameplay features for mappers<br>
+- various bug fixes and small changes<br>
+<p>
+<p>
+BETA 1.0 features<br>
+=================<br>
+- campaign-/subround-system<br>
+- triggerbased-mission-target system<br>
+- bomb/defuse gameplay<br>
+- vip gameplay<br>
+- terminal-hacking gameplay<br>
+- a bunch of new entities and options<br>
+- immediate-/round end - respawn possibility<br>
+- 4 udf player models (incl. 5 different heads)<br>
+- 2 hor player models (incl. 2 different heads)<br>
+- completely new player animations<br>
+- mission briefing system<br>
+- vgui equipmemt menu<br>
+- udf weapons: socom, socom tac., desert eagle, mp5k, mp5k-tac., uzi,<br>
+  m4, g36, sr-25, sg3000, spas12, xm-300 minigun<br>
+- hor weapons: red-snake,desert eagle, spike, uzi, shark, razor,<br>
+  hammer of light, amp, bison, m-940<br>
+- equipment: stealth generator, bomb, he grenade, poison grenade, c4<br>
+- intelligent weapon physique<br>
+- score system<br>
+- player ranking system<br>
+- 8 maps: pt_assault, pt_avenger, pt_cargo, pt_highlands, pt_desertstorm<br>
+  pt_liberty, pt_snowdrift, pt_underearth<br>
+- integrated mp3 player<br>
+- pt score tracks: daventry IV<br>
+- map-models: comanche, hor dropship, tank, truck and others..<br>
+
+</td>
+</tr>
+</div>
+</table>
+</td></tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+//////////////////////
+// Project Timeless //
+//////////////////////
+game "Project Timeless (Beta 3.0)"
+developer "www.project-timeless.de"
+url_info "http://www.project-timeless.de/"
+url_dl "http://www.project-timeless.de/"  
+icon "timeless"
+version "Beta 3.0" 
+manual         "manual"
+size "130000000"
+svonly "0" 
+secure "0"
+cldll "cl_dlls\client.dll" 
+hlversion "1110" 
+type "multiplayer_only" 
+nomodels "1" 
+mpentity "pt_round_info" 
+gamedll "dlls\timeless.dll"
+gamedll_linux "dlls/pt.so"

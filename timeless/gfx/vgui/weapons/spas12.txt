@@ -1,0 +1,3 @@
+SPAS-12
+
+[ category :  shotgun ]

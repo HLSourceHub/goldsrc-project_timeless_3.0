@@ -1,0 +1,121 @@
+
+------- Usefull scripts for Project Timeless by DanThrash -------
+
+
+
+-- all primary weapons on one key --
+
+bind "x" "prim"
+
+alias prim "sect3; sect4; sect5"
+alias sect3 "weapon_uzi; weapon_mp5k; weapon_mp5ktac; weapon_horg2"
+alias sect4 "weapon_m4; weapon_g36c; weapon_stoner; weapon_sig; weapon_horar1; weapon_horar2; weapon_hormg2; weapon_amp"
+alias sect5 "weapon_spas12; weapon_minigun; weapon_hormg1; weapon_remington"
+
+NOTE: -the aliases you must wright in your autoexec.cfg (if autoexec.cfg doesn´t exist, create it)
+      -the binding you must wright in your userconfig.cfg
+
+
+-- pick up weapon or item without the menu --
+
+bind "x" "+get"
+
+alias +get "+use"
+alias -get "-use; okbutton"
+
+NOTE: -the aliases you must wright in your autoexec.cfg (if autoexec.cfg doesn´t exist, create it)
+      -the binding you must wright in your userconfig.cfg
+
+
+-- complete equiped on teamchoice or subroundstart and euipbindings  --
+
+first make slot-combination-aliases for every weapon and item in your autoexec.cfg
+
+example : alias soc "slot1; slot1; slot10"  thats select the socom in the UDF equip-menu
+ 
+          first "slot1" select weapon category 1; second "slot1" select weapon 1; "slot10" means back to weapon category
+
+here´s a list of aliases of every weapon and item:
+
+alias soc "slot1; slot1; slot10"
+alias soctac "slot1; slot2; slot10"
+alias deagleUDF "slot1; slot3; slot10"
+alias snake "slot1; slot1; slot10"
+alias deagleHoR "slot1; slot2; slot10"
+alias mp5 "slot2; slot1; slot10"
+alias mp5tac "slot2; slot2; slot10"
+alias uziUDF "slot2; slot3; slot10"
+alias uziHoR "slot2; slot2; slot10"
+alias m4 "slot3; slot1; slot10"
+alias g36 "slot3; slot2; slot10"
+alias stoner "slot3; slot3; slot10"
+alias sig "slot3; slot4; slot10"
+alias shark "slot3; slot1; slot10"
+alias razor "slot3; slot2; slot10"
+alias amp "slot3; slot4; slot10"
+alias spas "slot4; slot1; slot10"
+alias mini "slot4; slot2; slot10"
+alias rem "slot4; slot1; slot10"
+alias bison "slot4; slot2; slot10"
+alias stealth "slot4; slot3; slot10"
+alias primammo2 "slot5; slot1; slot10"
+alias primammo4 "primammo2; slot6; slot5; slot10"
+alias secammo2 "slot5; slot2; slot10"
+alias gasmask "slot5; slot3; slot10"
+alias helmet "slot5; slot4; slot10"
+alias vest "slot5; slot5; slot10"
+alias vesthelm "helmet; vest"
+alias c4 "slot6; slot1; slot10"
+alias he "slot6; slot2; slot10"
+alias poison "slot6; slot3; slot10"
+
+NOTE: -the aliases you must wright in your autoexec.cfg (if autoexec.cfg doesn´t exist, create it)
+
+
+now take a look in your timeless/script directory, there you find 4 config-files:
+
+- join_hor.cfg           <--- was loded , if you join the HoR-team
+- join_udf.cfg           <--- was loded , if you join the UDF-team
+- roundstart_hor.cfg     <--- was loded , on the subraoundstart when you are HoR
+- roundstart_udf.cfg     <--- was loded , on the subraoundstart when you are UDF
+
+
+here´s an example for a join_udf.cfg:
+
+
+echo join UDF loaded
+
+resetequip     <--- reset the equipmentmenu ( no weapon or item is selected), needful if you are before in the HoR-team 
+
+equip; soc; m4; vesthelm; c4; okbutton  <--- only for advanced PT-gamers, with this alias-combination you can play from teamjoin but you can´t see the SubRoundbriefing and the Equipmentmenu!!!!
+                                             'equip' opens the Equipmentmenu; soc is my own alias for the socom (see above); m4 is my own alias for the m4 (see above); vesthelm is my own alias for kevlar and helmet (see above); c4 is my own alias for the c4 (see above); okbutton is the alias for use the OK-button in every menu
+
+unbind F3    <--- unbinds key F3
+
+bind F3 "resetequip; equip; soc; mp5; vesthelm; c4; okbutton"  <--- an equipmentbinding, when you push F3 you have a complete equipmentselction in the Equipmentmenu without using the Equipmentmenu!!!
+                                                                    but the selections are valid only AFTER your next respawn!!!
+                                                                    soc, mp5 and vesthelm are my own aliases for this weapons (see above)
+
+
+
+
+here´s an examplefor a roundstart_udf.cfg (only for advanced PT-gamers):
+
+echo SR UDF loaded
+
+
+alias wait2 "wait; wait"              <--- only wait alias
+alias wait3 "wait;wait;wait"          <--- only wait alias
+alias wait9 "wait3;wait3;wait3"       <--- only wait alias
+alias wait27 "wait9;wait9;wait9"      <--- only wait alias
+
+wait27; okbutton                      <--- wait27 is a wait alias; okbutton pushs the OK-button in the SubRoundbriefing
+                                           with this script you have the equipment that you selected in the subround before an you can start playing without the SubRoundbriefing!!!
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+so thats all
+
+If you have any questions visit http://www.project-timeless.de and wright your questions in the Tech Forum.

@@ -1,0 +1,11 @@
+// -----------------------------------------------------
+// #########  PROJECT TIMELESS PLAYLIST FILE  ##########
+// -----------------------------------------------------
+// Specify songs from this directory simply by adding the filename.
+// If you want to add files from other directory, include the full path
+// i.e.: C:\My Music\My Song.mp3
+// -----------------------------------------------------
+Christoph Sachal - Daventry IV.mp3
+Christoph Sachal - Timeless.mp3
+Christoph Sachal - Investigation & Escape.mp3
+Christoph Sachal - Desert Storm.mp3
